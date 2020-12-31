@@ -1,3 +1,5 @@
+# My Github: https://github.com/Guilherme-De-Marchi
+
 from random import randint
 from matrix import Matrix
 
@@ -49,7 +51,7 @@ i = [ # Inputs
     [0, 1],
 ]
 
-0 = [ # Correct outputs
+o = [ # Correct outputs
     [0],
     [0],
     [1],
@@ -58,7 +60,7 @@ i = [ # Inputs
 
 nn = NeuralNetwork(2, 3, 1, 1)
 
-for i in range(10000): # Training 10.000 times
+for j in range(10000): # Training 10.000 times
     x = randint(0, 3)
     nn.train([i[x]], [o[x]])
 
